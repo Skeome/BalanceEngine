@@ -1,0 +1,21 @@
+phytochemical_class,logit_hot,logit_cold,logit_dry,logit_wet,delta_hot_cold,delta_dry_wet,temperament
+Alkaloids,-0.563,0.161,0.297,-0.357,-0.724,0.654,Cold-Dry
+Flavonoids,-1.135,1.018,-0.004,0.009,-2.153,-0.013,Cold-NS
+Volatile oils,1.551,-1.520,1.012,-0.793,3.071,1.805,Hot-Dry
+Phenolic acids,-0.43,-0.474,0.926,-0.466,0.044,1.392,NS-Dry
+Terpenes (nonvolatile),1.039,-0.770,0.031,0.147,1.809,-0.116,Hot-NS
+Saccharides/Polysaccharides,0.295,-0.532,-0.360,0.485,0.827,-0.845,Hot-Wet
+Fruit acids,-1.296,0.837,-0.906,0.383,-2.133,-1.289,Cold-Wet
+Fats and Oils,-0.602,0.388,-0.104,-0.504,-0.99,0.4,Cold-Temperate
+Anthraquinones,0.041,-0.086,-1.076,1.041,0.127,-2.117,NS-Wet
+Coumarins,0.333,0.203,0.059,-0.083,0.13,0.142,NS-NS
+Steroids,0.174,-0.249,-0.376,0.321,0.423,-0.697,Temperate-Wet
+Saponins,0.518,-0.933,-0.422,1.169,1.451,-1.591,Hot-Wet
+Tannins,-1.015,0.648,-0.015,-0.055,-1.663,0.04,Cold-NS
+Cardiac Glycosides,-0.246,-0.137,-0.364,0.131,-0.109,-0.495,NS-Temperate
+Sesquiterpene lactones,-0.005,-0.452,0.273,-0.275,0.447,0.548,Temperate-Dry
+Lignans,0.794,-0.382,-0.099,-0.212,1.176,0.113,Hot-NS
+Phenols,1.692,-1.727,-0.155,-0.374,3.419,0.219,Hot-Temperate
+Polyenes and Carotenoids,-1.571,1.018,-0.597,-0.208,-2.589,-0.389,Cold-Temperate
+Iridoids,0.266,-0.545,-1.029,0.682,0.811,-1.711,Hot-Wet
+Phenolic acid esters,-1.311,0.917,-0.118,-0.668,-2.228,0.55,Cold-Dry

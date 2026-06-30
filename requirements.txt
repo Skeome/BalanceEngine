@@ -1,0 +1,9 @@
+rdkit
+pubchempy
+mendeleev
+pymatgen
+pyreadr
+scikit-learn
+pandas
+matplotlib
+numpy

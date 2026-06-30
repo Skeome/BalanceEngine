@@ -1,0 +1,12 @@
+herb,marker_compound,smiles,formula_verified,MolWt,LogP,TPSA,HBD,HBA,RotatableBonds,AromaticRings,FractionCSP3,NumHeteroatoms,MolarRefractivity,RingCount
+Birch lvs,betulin,CC(=C)C1CCC2(CCC3(C)C(CCC4C3(C)CCC3C4(C)CCC(O)C3(C)C)C12)CO,C30H50O2,442.73,6.997,40.46,2,2,2,0,0.933,2,132.06,5
+Caraway sd,carvone,CC1=CCC(CC1=O)C(=C)C,C10H14O,150.22,2.488,17.07,0,1,1,0,0.5,1,46.3,1
+Cinnamon,cinnamaldehyde,C(=C/C=O)\c1ccccc1,C9H8O,132.16,1.899,17.07,0,1,2,1,0.0,1,41.54,1
+Comfrey rt,allantoin,C1(=O)NC(=O)NC1NC(=O)N,C4H6N4O3,158.12,-2.18,113.32,4,3,1,0,0.25,7,33.18,1
+Coriander sd,linalool,CC(=CCCC(C)(C=C)O)C,C10H18O,154.25,2.67,20.23,1,1,4,0,0.6,1,49.49,0
+Fennel sd,anethole,COc1ccc(/C=C/C)cc1,C10H12O,148.2,2.728,9.23,0,1,2,1,0.2,1,47.7,1
+Ginger rt,6-gingerol,CCCCCC(O)CC(=O)CCc1ccc(O)c(OC)c1,C17H26O4,294.39,3.234,66.76,2,4,10,1,0.588,4,82.75,1
+Melissa lvs,citronellal,CC(CCC=C(C)C)CC=O,C10H18O,154.25,2.958,17.07,0,1,5,0,0.7,1,48.51,0
+Thyme lvs,thymol,CC1=CC(=C(C=C1)C(C)C)O,C10H14O,150.22,2.824,20.23,1,1,1,1,0.4,1,46.93,1
+Turmeric rt,curcumin,COC1=C(C=CC(=C1)/C=C/C(=O)CC(=O)/C=C/C2=CC(=C(C=C2)O)OC)O,C21H20O6,368.39,3.37,93.06,2,6,8,2,0.143,6,102.02,2
+Willow bk,salicin,OCc1ccccc1OC1OC(CO)C(O)C(O)C1O,C13H18O7,286.28,-1.642,119.61,5,7,4,1,0.538,7,66.76,2

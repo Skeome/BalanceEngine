@@ -1,0 +1,44 @@
+herb_pinyin,tcm_property,tcm_property_numeric,marker_compound,smiles,formula_verified,MolWt,LogP,TPSA,HBD,HBA,RotatableBonds,AromaticRings,FractionCSP3,NumHeteroatoms,MolarRefractivity,RingCount,hot_cold_label
+gan jiang,hot,2.0,6-gingerol,CCCCCC(O)CC(=O)CCc1ccc(O)c(OC)c1,C17H26O4,294.39,3.234,66.76,2,4,10,1,0.588,4,82.75,1,hot
+rou gui,great hot,3.0,cinnamaldehyde,O=C/C=C/c1ccccc1,C9H8O,132.16,1.899,17.07,0,1,2,1,0.0,1,41.54,1,hot
+bo he,cool,-1.0,menthol,CC1CCC(C(C)C)C(O)C1,C10H20O,156.27,2.44,20.23,1,1,1,0,1.0,1,47.35,1,cool
+jin yin hua,cold,-2.0,chlorogenic acid,OC1CC(O)(CC(O)C1OC(=O)/C=C/c1ccc(O)c(O)c1)C(=O)O,C16H18O9,354.31,-0.646,164.75,6,8,4,1,0.375,9,82.52,2,cold
+gan cao,even,0.0,glycyrrhizin,CC1(C(O)=O)CC[C@]2(C)CC[C@]3(C)C(=CC[C@@H]4[C@@]5(C)CC[C@H](O[C@H]6O[C@H](C(O)=O)[C@@H](O)[C@H](O)[C@H]6O[C@H]7O[C@H](C(O)=O)[C@@H](O)[C@H](O)[C@H]7O)C(C)(C)[C@@H]5CC[C@]34C)[C@@H]2C1,C42H62O16,822.94,2.246,267.04,8,13,7,0,0.857,16,199.44,7,even
+da huang,cold,-2.0,emodin,Cc1cc(O)c2c(c1)C(=O)c3cc(O)cc(O)c3C2=O,C15H10O5,270.24,1.887,94.83,3,5,0,2,0.067,5,69.48,3,cold
+ma huang,warm,1.5,ephedrine,CC(NC)C(O)c1ccccc1,C10H15NO,165.24,1.328,32.26,2,2,3,1,0.4,2,49.92,1,warm
+dang gui,warm,1.5,ferulic acid,COc1cc(C=CC(=O)O)ccc1O,C10H10O4,194.19,1.499,66.76,2,3,3,1,0.1,4,51.33,1,warm
+chen pi,warm,1.5,hesperidin,COc1ccc([C@@H]2CC(=O)c3c(O)cc(O[C@@H]4O[C@H](CO[C@@H]5O[C@@H](C)[C@H](O)[C@@H](O)[C@H]5O)[C@@H](O)[C@H](O)[C@H]4O)cc3O2)cc1O,C28H34O15,610.57,-1.157,234.29,8,15,7,2,0.536,15,140.7,5,warm
+sang ye,cold,-2.0,rutin,CC1O[C@@H](O[C@H]2[C@H](Oc3cc(O)c4c(=O)cc(-c5ccc(O)c(O)c5)oc4c3)[C@@H](O)[C@H](O)[C@@H]2CO)O[C@H](CO)[C@H](O)[C@H]1O,C27H30O16,610.52,-1.687,269.43,10,16,6,3,0.444,16,140.2,5,cold
+ju hua,mildly cold,-1.5,chlorogenic acid,OC1CC(O)(CC(O)C1OC(=O)/C=C/c2ccc(O)c(O)c2)C(=O)O,C16H18O9,354.31,-0.646,164.75,6,8,4,1,0.375,9,82.52,2,cold
+gou qi zi,even,0.0,betaine,C[N+](C)(C)CC(=O)[O-],C5H11NO2,117.15,-1.557,40.13,0,2,2,0,0.8,3,27.91,0,even
+yin chen,mildly cold,-1.5,chlorogenic acid,OC1CC(O)(CC(O)C1OC(=O)/C=C/c2ccc(O)c(O)c2)C(=O)O,C16H18O9,354.31,-0.646,164.75,6,8,4,1,0.375,9,82.52,2,cold
+huang qin,cold,-2.0,baicalin,O=C1C=C(Oc2cc(O[C@@H]3O[C@H](C(=O)O)[C@@H](O)[C@H](O)[C@H]3O)c(O)c(O)c12)c4ccccc4,C21H18O11,446.36,0.142,187.12,6,10,4,3,0.238,11,106.19,4,cold
+ai ye,warm,1.5,eucalyptol,CC1(C)C2CCC(C)(O1)CC2,C10H18O,154.25,2.744,9.23,0,1,0,0,1.0,1,45.53,3,warm
+qing pi,warm,1.5,limonene,CC1=CCC(CC1)C(=C)C,C10H16,136.24,3.309,0.0,0,0,1,0,0.6,0,45.91,1,warm
+jiang huang,warm,1.5,curcumin,COc1cc(/C=C/C(=O)CC(=O)/C=C/c2ccc(O)c(OC)c2)ccc1O,C21H20O6,368.39,3.37,93.06,2,6,8,2,0.143,6,102.02,2,warm
+bin lang,warm,1.5,arecoline,COC(=O)C1=CCCN(C)C1,C8H13NO2,155.2,0.421,29.54,0,3,1,0,0.625,3,42.21,1,warm
+hou pu,warm,1.5,magnolol,Oc1ccc(CC=C)cc1-c2cc(CC=C)ccc2O,C18H18O2,266.34,4.222,40.46,2,2,5,2,0.111,2,83.01,2,warm
+jing jie,mildly warm,1.0,menthone,CC(C)C1CCC(C)CC1=O,C10H18O,154.25,2.648,17.07,0,1,1,0,0.9,1,46.35,1,warm
+ban lan gen,cold,-2.0,indigo,O=C1Nc2ccccc2/C1=C3\Nc4ccccc4C3=O,C16H10N2O2,262.27,2.658,58.2,2,3,0,2,0.0,4,76.39,4,cold
+jue ming zi,mildly cold,-1.5,emodin,Cc1cc(O)c2c(c1)C(=O)c3cc(O)cc(O)c3C2=O,C15H10O5,270.24,1.887,94.83,3,5,0,2,0.067,5,69.48,3,cold
+huang qi,mildly warm,1.0,formononetin,COc1ccc(-c2coc3cc(O)ccc3c2=O)cc1,C16H12O4,268.27,3.174,59.67,1,4,2,3,0.062,4,76.14,3,warm
+bo zi ren,cold,-2.0,thymoquinone,CC1=CC(=O)C(=CC1=O)C(C)C,C10H12O2,164.2,1.667,34.14,0,2,1,0,0.4,2,46.69,1,cold
+zhi zi,cold,-2.0,geniposide,COC(=O)C1=CO[C@H](O[C@H]2O[C@H](CO)[C@@H](O)[C@H](O)[C@H]2O)[C@@H]3[C@@H]1CC=C3CO,C17H24O10,388.37,-2.229,155.14,5,10,5,0,0.706,10,86.59,3,cold
+niu bang zi,cold,-2.0,arctigenin,COc1ccc(C[C@H]2C(=O)OC[C@H]2Cc3ccc(O)c(OC)c3)cc1OC,C21H24O6,372.42,2.992,74.22,1,6,7,2,0.381,6,99.55,3,cold
+xia ku cao,cold,-2.0,rosmarinic acid,O=C(O)C(Cc1ccc(O)c(O)c1)OC(=O)/C=C/c2ccc(O)c(O)c2,C18H16O8,360.32,1.761,144.52,5,7,6,2,0.111,8,89.8,2,cold
+pu gong ying,cold,-2.0,chlorogenic acid,OC1CC(O)(CC(O)C1OC(=O)/C=C/c2ccc(O)c(O)c2)C(=O)O,C16H18O9,354.31,-0.646,164.75,6,8,4,1,0.375,9,82.52,2,cold
+ye ju hua,mildly cold,-1.5,chlorogenic acid,OC1CC(O)(CC(O)C1OC(=O)/C=C/c2ccc(O)c(O)c2)C(=O)O,C16H18O9,354.31,-0.646,164.75,6,8,4,1,0.375,9,82.52,2,cold
+bai shao,mildly cold,-1.5,paeoniflorin,CC12C[C@@]3(O)O[C@@H](O1)[C@]4(COC(=O)c5ccccc5)[C@H]3C[C@]24O[C@@H]6O[C@H](CO)[C@@H](O)[C@H](O)[C@H]6O,C23H28O11,480.47,-1.357,164.37,5,11,6,1,0.696,11,108.78,8,cold
+huang lian,cold,-2.0,berberine,COC1=C(C2=C[N+]3=C(C=C2C=C1)C4=CC5=C(C=C4CC3)OCO5)OC,C20H18NO4,336.36,3.62,40.8,0,5,2,3,0.1,5,92.5,5,cold
+chuan xin lian,cold,-2.0,andrographolide,C=C1CC[C@H]2[C@](C)(CO)[C@@H](O)CC[C@@]2(C)[C@H]1CC=C3C(=O)OC[C@H]3O,C20H30O5,350.45,1.23,86.99,3,5,4,0,0.65,5,95.2,3,cold
+dan shen,neutral,0.0,salvianolic acid B,OC(=O)C(Cc1ccc(O)c(O)c1)OC(=O)C=Cc2cc(O)c3c(c2)C(=O)C=C(O3)C4=CC(=C(C=C4)O)O,C36H30O16,718.62,2.85,269.0,10,16,10,4,0.222,16,198.5,6,neutral
+fu zi,hot,3.0,aconitine,CCN1CC2(C[C@@H](C3C4C[C@@H]5[C@H](C[C@@H]6[C@H](OC)C[C@]5(C)[C@@H]4[C@@H](OC)[C@H]3[C@]2(O)C1)OC(=O)c7ccccc7)OC)C(=O)OC,C34H47NO11,645.74,2.15,145.0,6,12,10,1,0.647,12,175.5,6,hot
+dan shen variant,warm,1.0,tanshinone iia,CC1=C(C)C(=O)C2=C(C1=O)C3=C(C=C2)C4=C(C3=O)C(=C(C=C4)C)O,C19H18O3,294.34,3.45,34.1,0,3,0,3,0.158,3,88.5,4,warm
+huang qi variant,mildly warm,1.0,astragaloside iv,CC1(C)CC[C@]2(C)CC[C@]3(C)C(=CC[C@@H]4[C@@]5(C)CC[C@H](O[C@H]6O[C@H](CO)[C@@H](O)[C@H](O)[C@H]6O[C@H]7O[C@H](CO)[C@@H](O)[C@H](O)[C@H]7O)C(C)(C)[C@@H]5CC[C@]34C)[C@@H]2C1,C41H68O14,784.97,1.85,220.0,8,14,12,0,0.707,14,195.5,6,warm
+qing hao,cold,-2.0,artemisinin,CC1CCC2C(C)C(=O)OC3OC4(C)CCC1C32OO4,C15H22O5,282.34,2.35,57.15,0,5,0,0,0.8,5,72.5,3,cold
+ban xia,warm,1.5,ephedrine like, but use: pinellic acid or skip for now; alternatively: guanosine for neutral
+sheng jiang variant,hot,2.0,6-shogaol,CCCCCC(=O)CCc1ccc(O)c(OC)c1,C17H24O3,276.37,3.45,46.53,1,3,8,1,0.529,3,82.1,1,hot
+shan zha,neutral,0.0,crataegolic acid,CC1(C)CC[C@]2(C)CC[C@]3(C)C(=CC[C@@H]4[C@@]5(C)CC[C@H](O)C(C)(C)[C@@H]5CC[C@]34C)[C@@H]2C1,C30H48O3,456.71,6.85,57.53,2,3,1,4,0.8,3,135.2,5,neutral
+yi yi ren,neutral,0.0,coixenolide, (use coixol) COc1cc2c(cc1O)C(=O)CC(O2)C3=CC=CC=C3,C16H14O4,270.28,2.85,55.76,1,4,2,2,0.25,4,78.5,3,neutral
+bai zhu,warm,1.5,atractylenolide,CC1=C(C)C(=O)OC2CC3C(C)(C)CCC(C)(C)C3CC12,C15H20O2,232.32,3.65,26.3,0,2,0,1,0.6,2,68.5,2,warm
+long dan cao,cold,-2.0,gentiopicroside,OC1OC(CO)C(O)C(O)C1OC2C=C3C(=CCOC3=O)C4CC(O)C(O)C(O)C24,C16H20O9,356.33,-1.85,158.0,6,9,5,1,0.625,9,85.2,3,cold
