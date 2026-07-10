@@ -16,8 +16,6 @@ That claim can succeed, partially succeed, or fail outright — and each outcome
 
 Hot/Cold/Dry/Moist are treated as **latent variables to be fit against real target data**, never as labels assigned by analogy. Every compound included in any dataset here passes a two-tier verification gate (formula-check + independent cross-source confirmation) before being used; compounds that fail are excluded, never patched. Historical classification systems (Culpeper, TCM, Bartlett's wet-lab measurements) are treated as **validation/prediction targets**, not training labels chosen to make the model agree with a preferred conclusion.
 
-See `results/Balance_Engine_Project_Report.md` for the full account of what has been tested, what was rejected, what was reformulated into a sharper open question, and what remains deferred pending further data — including corrections made during the repository build (see the orthogonality-correlation correction in §4 as a worked example of the verification discipline catching a real error in the project's own prior output).
-
 ## Repository structure
 
 ```
@@ -25,11 +23,33 @@ data/
   ground_truth/       physically/textually measured data used to FIT the model
   compounds/          verified molecular descriptors (two-tier gate passed)
   prediction_targets/ held-out data (e.g. Culpeper) used ONLY to test predictions, never to fit
+  TCMNP/              source R data exports and original TCMNP raw tables
+
 src/
-  verify_compound.py      the two-tier verification gate
-  fetch_pubchem.py        PubChem fetcher (requires real network access)
-  build_dataset.py        combined fetch -> verify -> save pipeline
-  orthogonality_test.py   standing diagnostic for any new Hot/Cold x Wet/Dry dataset
+  verify_compound.py         the two-tier verification gate
+  fetch_pubchem.py           PubChem fetcher (requires real network access)
+  build_dataset.py           combined fetch -> verify -> save pipeline
+  atomic_descriptors.py      atomic composition descriptor bridge for organics and inorganics
+  build_compound_catalog.py  build a canonical compound catalog from verified CSV sources
+  topology_descriptors.py    bonded-graph topology descriptor layer for organic compounds
+  topology_pipeline.py       verified topology descriptor pipeline from existing compound data
+  compare_atomic_vs_rdkit.py compare atomic/composition descriptors against RDKit bond-graph descriptors
+  check_inorganic_correlation.py inorganic descriptor validation diagnostics
+  check_pc_separation.py     PCA/feature separation diagnostic for current datasets
+  pca_full_dataset.py        empirical dimensionality check on the full verified dataset
+  orthogonality_test.py      standing diagnostic for Hot<->Cold vs Wet<->Dry independence
+  PrincipleComponentAnalysis.py legacy PCA script; superseded by pca_full_dataset.py
+
+scripts/
+  add_batch1.py              transitional batch dataset builder for herb_pm-based candidates
+  add_batch2.py              transitional batch dataset builder for herb_pm-based candidates
+  convert_compounds.py       R-data to CSV conversion helper for TCMNP compound exports
+  convert_herb_pm.py         R-data to CSV conversion helper for TCMNP herb property data
+  extract_lovell.py          OCR/text extraction helper for Lovell source materials
+  find_pages.py              PDF page extraction helper for locating source references
+  parse_lovell.py            text parsing helper for Lovell source material
+  parse_minerals.py          text parsing helper for mineral OCR/source cleanup
+
 results/
   Balance_Engine_Project_Report.md   full project report and findings to date
 exports/
@@ -47,8 +67,6 @@ PubChem-dependent scripts (`fetch_pubchem.py`, `build_dataset.py`) require unres
 
 ## Current phase
 
-See `results/Balance_Engine_Project_Report.md` §9 ("Active Roadmap") for the current phase structure (Learn → Validate → Emergence → Extend) and what's required before moving to the next phase. As of this commit: Phase 1 (fitting against Bartlett + growing Culpeper coverage) is in progress; the PCA dimensionality check (is "four independent qualities" even the right-shaped model?) has not yet been run and should happen before Phase 3.
-
-## License
+ See `results/Balance_Engine_Project_Report.md` §9 ("Active Roadmap") for the current phase structure (Learn → Validate → Emergence → Extend) and what's required before moving to the next phase. As of this commit: Phase 1 (fitting against Bartlett + growing Culpeper coverage) is in progress; the PCA dimensionality check and current Bartlett-only/TCM-only split-check have now been run. The repository already contains an explicit organic topology layer (`src/topology_descriptors.py`, `src/topology_pipeline.py`) and an atomic composition layer (`src/atomic_descriptors.py`, `src/compare_atomic_vs_rdkit.py`), but the remaining work is to turn those into a formal shared descriptor schema and a dedicated Balance Derivation engine that can accept either or both branches.
 
 See `LICENSE`. Data sourced from third parties (TCMNP, Ramezany et al. 2013, PubChem) retains its own terms — check each source before redistribution; see citations in the project report.

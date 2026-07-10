@@ -1,0 +1,21 @@
+source_name,marker_compound,label,cid,smiles,formula_verified,verification_strength,MolWt,LogP,TPSA,HBD,HBA,RotatableBonds,FractionCSP3,NumHeteroatoms,MolarRefractivity,AromaticRings,RingCount
+ren shen,ginsenoside Rb1,mildly warm,9898279,CC(=CCCC(C)(C1CCC2(C1C(CC3C2(CCC4C3(CCC(C4(C)C)OC5C(C(C(C(O5)CO)O)O)OC6C(C(C(C(O6)CO)O)O)O)C)C)O)C)OC7C(C(C(C(O7)COC8C(C(C(C(O8)CO)O)O)O)O)O)O)C,C54H92O23,weak (PubChem self-reported formula),1109.307,-2.203,377.29,15,23,16,0.963,23,266.217,0,8
+lian qiao,phillyrin,mildly cold,101712,COC1=C(C=C(C=C1)C2C3COC(C3CO2)C4=CC(=C(C=C4)OC5C(C(C(C(O5)CO)O)O)O)OC)OC,C27H34O11,weak (PubChem self-reported formula),534.558,0.966,145.53,4,11,8,0.556,11,131.301,2,5
+chai hu,saikosaponin A,mildly cold,167928,CC1C(C(C(C(O1)OC2CCC3(C(C2(C)CO)CCC4(C3C=CC56C4(CC(C7(C5CC(CC7)(C)C)CO6)O)C)C)C)O)OC8C(C(C(C(O8)CO)O)O)O)O,C42H68O13,weak (PubChem self-reported formula),780.993,1.777,207.99,8,13,6,0.952,13,196.825,0,8
+zhi mu,mangiferin,cold,5281647,C1=C2C(=CC(=C1O)O)OC3=C(C2=O)C(=C(C(=C3)O)C4C(C(C(C(O4)CO)O)O)O)O,C19H18O11,weak (PubChem self-reported formula),422.342,-0.716,201.28,8,11,2,0.316,11,99.369,3,4
+tian ma,gastrodin,even,115067,C1=CC(=CC=C1CO)OC2C(C(C(C(O2)CO)O)O)O,C13H18O7,weak (PubChem self-reported formula),286.28,-1.642,119.61,5,7,4,0.538,7,66.76,1,2
+ge gen,puerarin,cool,5281807,C1=CC(=CC=C1C2=COC3=C(C2=O)C=CC(=C3C4C(C(C(C(O4)CO)O)O)O)O)O,C21H20O9,weak (PubChem self-reported formula),416.382,0.386,160.82,6,9,3,0.286,9,103.97,3,4
+chuan xiong,tetramethylpyrazine,warm,14296,CC1=C(N=C(C(=N1)C)C)C,C8H12N2,weak (PubChem self-reported formula),136.198,1.71,25.78,0,2,0,0.5,2,40.98,1,1
+mai dong,ophiopogonin D,mildly cold,46173859,CC1CCC2(C(C3C(O2)CC4C3(CCC5C4CC=C6C5(C(CC(C6)O)OC7C(C(C(C(O7)C)O)OC8C(C(C(CO8)O)O)O)OC9C(C(C(C(O9)C)O)O)O)C)C)C)OC1,C44H70O16,weak (PubChem self-reported formula),855.028,0.852,235.68,8,16,6,0.955,16,208.16,0,9
+wu zhu yu,evodiamine,hot,442088,CN1C2C3=C(CCN2C(=O)C4=CC=CC=C41)C5=CC=CC=C5N3,C19H17N3O,weak (PubChem self-reported formula),303.365,3.315,39.34,1,2,0,0.211,4,90.625,3,5
+ku shen,matrine,cold,91466,C1CC2C3CCCN4C3C(CCC4)CN2C(=O)C1,C15H24N2O,weak (PubChem self-reported formula),248.37,1.872,23.55,0,2,0,0.933,3,70.161,0,4
+san qi,notoginsenoside R1,warm,441934,CC(=CCCC(C)(C1CCC2(C1C(CC3C2(CC(C4C3(CCC(C4(C)C)O)C)OC5C(C(C(C(O5)CO)O)O)OC6C(C(C(CO6)O)O)O)C)O)C)OC7C(C(C(C(O7)CO)O)O)O)C,C47H80O18,weak (PubChem self-reported formula),933.139,-0.417,298.14,12,18,12,0.957,18,228.967,0,7
+yuan zhi,tenuifolin,warm,21588226,CC1(CCC2(CCC3(C(=CCC4C3(CCC5C4(CC(C(C5(C)C(=O)O)OC6C(C(C(C(O6)CO)O)O)O)O)C)C)C2C1)CO)C(=O)O)C,C36H56O12,weak (PubChem self-reported formula),680.832,2.066,214.44,8,10,6,0.889,12,170.078,0,6
+mu dan pi,paeonol,mildly cold,11092,CC(=O)C1=C(C=C(C=C1)OC)O,C9H10O3,weak (PubChem self-reported formula),166.176,1.603,46.53,1,3,2,0.222,3,44.663,1,1
+bai zhi,imperatorin,warm,10212,CC(=CCOC1=C2C(=CC3=C1OC=C3)C=CC(=O)O2)C,C16H14O4,weak (PubChem self-reported formula),270.284,3.884,52.58,0,4,3,0.188,4,77.182,3,3
+di huang,catalpol,cool,91520,C1=COC(C2C1C(C3C2(O3)CO)O)OC4C(C(C(C(O4)CO)O)O)O,C15H22O10,weak (PubChem self-reported formula),362.331,-3.59,161.6,6,10,4,0.867,10,76.542,0,4
+dang shen,lobetyolin,even,14655097,CC=CC#CC#CC(C(C=CCCCO)OC1C(C(C(C(O1)CO)O)O)O)O,C20H28O8,weak (PubChem self-reported formula),396.436,-1.556,139.84,6,8,8,0.6,8,100.473,0,1
+tu fu ling,astilbin,even,119258,CC1C(C(C(C(O1)OC2C(OC3=CC(=CC(=C3C2=O)O)O)C4=CC(=C(C=C4)O)O)O)O)O,C21H22O11,weak (PubChem self-reported formula),450.396,0.038,186.37,7,11,3,0.381,11,104.471,2,4
+yin yang huo,icariin,warm,5318997,CC1C(C(C(C(O1)OC2=C(OC3=C(C2=O)C(=CC(=C3CC=C(C)C)OC4C(C(C(C(O4)CO)O)O)O)O)C5=CC=C(C=C5)OC)O)O)O,C33H40O15,weak (PubChem self-reported formula),676.668,0.068,238.2,8,15,9,0.485,15,166.65,3,5
+du zhong,pinoresinol diglucoside,warm,174003,COC1=C(C=CC(=C1)C2C3COC(C3CO2)C4=CC(=C(C=C4)OC5C(C(C(C(O5)CO)O)O)O)OC)OC6C(C(C(C(O6)CO)O)O)O,C32H42O16,weak (PubChem self-reported formula),682.672,-1.864,235.68,8,16,10,0.625,16,159.144,2,6
+wu wei zi,schisandrin,warm,3001664,CC1CC2=CC(=C(C(=C2C3=C(C(=C(C=C3CC1(C)O)OC)OC)OC)OC)OC)OC,C24H32O7,weak (PubChem self-reported formula),432.513,3.891,75.61,1,7,6,0.5,7,118.386,2,3

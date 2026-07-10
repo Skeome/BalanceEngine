@@ -1,0 +1,69 @@
+## What needs to happen
+
+### 1. Make the topology layer explicit
+Right now the repo has:
+- atomic_descriptors.py for composition-only, inorganic-capable descriptors
+- RDKit-based organic descriptors in the compound pipeline
+
+But it lacks a formal bond-graph/topology layer.
+
+So the first bridge step is:
+- add a dedicated `MolecularTopology` layer/module
+- compute it only for organics from `SMILES` / RDKit
+- expose descriptors like `LogP`, `TPSA`, `FractionCSP3`, `AromaticRings`, `RotatableBonds`, plus graph topology metrics
+
+That gives you:
+- Organic path = `SMILES -> topology descriptors -> balance derivation`
+- Inorganic path = `formula -> atomic composition descriptors -> balance derivation`
+
+### 2. Unify around a shared descriptor schema
+The bridge is not forcing organics and inorganics onto the same raw descriptor set. It is:
+- defining a shared compound-level schema
+- allowing one branch to fill it with graph-aware, bond topology features
+- allowing the other branch to fill it with composition-weighted atomic features
+
+compare_atomic_vs_rdkit.py already shows the right design pattern:
+- combine atomic descriptors with RDKit descriptors
+- compare layers rather than collapse them immediately
+
+### 3. Create a real “balance derivation” layer
+Once the shared schema exists, the next step is:
+- build the Balance Derivation Layer to accept either:
+  - organic/topology-derived features
+  - inorganic/atomic-derived features
+- or both when available
+
+That means the model can learn from:
+- organic-only signals when present
+- inorganic-only signals when organics are absent
+- a unified latent space when both are available
+
+### 4. Expand to individual atoms later
+This is the next extension after the compound bridge:
+- keep `atomic_descriptors.element_descriptors()` as the atomic foundation
+- build atom-level feature vectors for organics using RDKit atom/bond environment data
+- for inorganics, use per-element atomic properties and formula-derived local context
+
+Then:
+- aggregate atom-level features to compounds
+- or model individual atoms directly as a second layer
+- this gives a finer-grained layer beneath the compound-level balance output
+
+### Practical repo tasks
+To make it concrete:
+- add a new module like `src/topology_descriptors.py`
+- implement `compute_topology_descriptors(smiles)` using RDKit
+- update the pipeline to produce a unified catalog: organic topology + atomic composition
+- keep `chemical source` metadata so the model knows whether a descriptor is:
+  - bond-graph-derived
+  - composition-derived
+- later add `src/atom_descriptors.py` or extend atomic_descriptors.py with per-atom environment vectors
+
+### In short
+- bridge organics/inorganics by explicitly separating:
+  - `Atomic layer` for all compounds
+  - `Topology layer` for organics only
+- unify them in a shared balance derivation engine
+- later expand below that to a per-atom representation using atomic descriptors + local graph context
+
+That is the correct architectural path to go from “organic-only PCA” to a true unified organic/inorganic system, then eventually to atom-level modeling.

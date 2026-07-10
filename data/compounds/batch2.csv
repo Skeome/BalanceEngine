@@ -1,0 +1,40 @@
+source_name,marker_compound,label,cid,smiles,formula_verified,verification_strength,MolWt,LogP,TPSA,HBD,HBA,RotatableBonds,FractionCSP3,NumHeteroatoms,MolarRefractivity,AromaticRings,RingCount
+bai bu,stemonine,mildly warm,155331,CCC1C2C3CCC(N3CCCC2OC14C=C(C(=O)O4)C)C5CC(C(=O)O5)C,C22H31NO5,weak (PubChem self-reported formula),389.492,2.805,65.07,0,6,2,0.818,6,101.135,0,5
+cang zhu,atractylodin,warm,5321047,CC=CC#CC#CC=CC1=CC=CO1,C13H10O,weak (PubChem self-reported formula),182.222,2.876,13.14,0,1,1,0.077,1,58.108,1,1
+fang feng,prim-O-glucosylcimifugin,mildly warm,14034912,CC(C)(C1CC2=C(O1)C=C3C(=C2OC)C(=O)C=C(O3)COC4C(C(C(C(O4)CO)O)O)O)O,C22H28O11,weak (PubChem self-reported formula),468.455,-0.807,168.28,5,11,6,0.591,11,112.01,2,4
+fu ling,pachymic acid,even,5484385,CC(C)C(=C)CCC(C1C(CC2(C1(CCC3=C2CCC4C3(CCC(C4(C)C)OC(=O)C)C)C)C)O)C(=O)O,C33H52O5,weak (PubChem self-reported formula),528.774,7.331,83.83,2,4,7,0.818,5,150.326,0,4
+gou teng,rhynchophylline,cool,5281408,CCC1CN2CCC3(C2CC1C(=COC)C(=O)OC)C4=CC=CC=C4NC3=O,C22H28N2O4,weak (PubChem self-reported formula),384.476,2.7,67.87,1,5,4,0.545,6,105.724,1,4
+he ye,nuciferine,even,10146,CN1CCC2=CC(=C(C3=C2C1CC4=CC=CC=C43)OC)OC,C19H21NO2,weak (PubChem self-reported formula),295.382,3.456,21.7,0,3,2,0.368,3,87.761,2,4
+hong hua,hydroxysafflor yellow A,warm,6443665,C1=CC(=CC=C1C=CC(=C2C(=C(C(=O)C(C2=O)(C3C(C(C(C(O3)CO)O)O)O)O)C4C(C(C(C(O4)CO)O)O)O)O)O)O,C27H32O16,weak (PubChem self-reported formula),612.537,-4.403,295.36,12,16,6,0.481,16,138.949,1,4
+kuan dong hua,tussilagone,warm,13919185,CCC(=CC(=O)OC1CC(C2C(C1=C)CC(=O)C2C(C)OC(=O)C)C(C)C)C,C23H34O5,weak (PubChem self-reported formula),390.52,4.26,69.67,0,5,6,0.696,5,107.335,0,2
+lian zi,liensinine,even,160644,CN1CCC2=CC(=C(C=C2C1CC3=CC=C(C=C3)O)OC4=C(C=CC(=C4)CC5C6=CC(=C(C=C6CCN5C)OC)OC)O)OC,C37H42N2O6,weak (PubChem self-reported formula),610.751,6.459,83.86,2,8,9,0.351,8,174.386,4,6
+lu hui,aloin,cold,9866696,C1=CC2=C(C(=C1)O)C(=O)C3=C(C2C4C(C(C(C(O4)CO)O)O)O)C=C(C=C3O)CO,C21H22O9,weak (PubChem self-reported formula),418.398,-0.891,167.91,7,9,3,0.381,9,101.179,2,4
+mu gua,oleanolic acid,warm,10494,CC1(CCC2(CCC3(C(=CCC4C3(CCC5C4(CCC(C5(C)C)O)C)C)C2C1)C)C(=O)O)C,C30H48O3,weak (PubChem self-reported formula),456.711,7.234,57.53,2,2,1,0.9,3,132.682,0,5
+qian hu,praeruptorin A,mildly cold,38347607,CC=C(C)C(=O)OC1C(C2=C(C=CC3=C2OC(=O)C=C3)OC1(C)C)OC(=O)C,C21H22O7,weak (PubChem self-reported formula),386.4,3.446,92.04,0,7,3,0.381,7,101.009,2,3
+rou cong rong,echinacoside,warm,5281771,CC1C(C(C(C(O1)OC2C(C(OC(C2OC(=O)C=CC3=CC(=C(C=C3)O)O)COC4C(C(C(C(O4)CO)O)O)O)OCCC5=CC(=C(C=C5)O)O)O)O)O)O,C35H46O20,weak (PubChem self-reported formula),786.733,-3.192,324.44,12,20,13,0.571,20,179.729,2,5
+sang bai pi,morusin,cold,5281671,CC(=CCC1=C(OC2=C(C1=O)C(=CC3=C2C=CC(O3)(C)C)O)C4=C(C=C(C=C4)O)O)C,C25H24O6,weak (PubChem self-reported formula),420.461,5.27,100.13,3,6,3,0.24,6,119.79,3,4
+shan yao,diosgenin,even,99474,CC1CCC2(C(C3C(O2)CC4C3(CCC5C4CC=C6C5(CCC(C6)O)C)C)C)OC1,C27H42O3,weak (PubChem self-reported formula),414.63,5.714,38.69,1,3,0,0.926,3,117.701,0,6
+suan zao ren,jujuboside A,even,51346169,CC1C(C(C(C(O1)OC2C(C(COC2OC3CCC4(C5CCC6C7C(CC(OC78CC6(C5(CCC4C3(C)C)C)CO8)C=C(C)C)(C)O)C)O)OC9C(C(C(C(O9)COC1C(C(C(C(O1)CO)O)O)O)O)O)OC1C(C(C(CO1)O)O)O)O)O)O,C58H94O26,weak (PubChem self-reported formula),1207.364,-2.718,393.98,14,26,13,0.966,26,282.683,0,11
+tao ren,amygdalin,even,656516,C1=CC=C(C=C1)C(C#N)OC2C(C(C(C(O2)COC3C(C(C(C(O3)CO)O)O)O)O)O)O,C20H27NO11,weak (PubChem self-reported formula),457.432,-3.108,202.32,7,12,7,0.65,12,102.282,1,3
+tu si zi,hyperoside,even,5281643,C1=CC(=C(C=C1C2=C(C(=O)C3=C(C=C(C=C3O2)O)O)OC4C(C(C(C(O4)CO)O)O)O)O)O,C21H20O12,weak (PubChem self-reported formula),464.379,-0.539,210.51,8,12,4,0.286,12,108.974,3,4
+xuan shen,harpagoside,mildly cold,5281542,CC1(CC(C2(C1C(OC=C2)OC3C(C(C(C(O3)CO)O)O)O)O)O)OC(=O)C=CC4=CC=CC=C4,C24H30O11,weak (PubChem self-reported formula),494.493,-1.2,175.37,6,11,6,0.542,11,117.902,1,4
+yan hu suo,tetrahydropalmatine,warm,72301,COC1=C(C2=C(CC3C4=CC(=C(C=C4CCN3C2)OC)OC)C=C1)OC,C21H25NO4,weak (PubChem self-reported formula),355.434,3.377,40.16,0,5,4,0.429,5,99.651,2,4
+yi mu cao,leonurine,mildly cold,161464,COC1=CC(=CC(=C1O)OC)C(=O)OCCCCN=C(N)N,C14H21N3O5,weak (PubChem self-reported formula),311.338,0.62,129.39,3,6,8,0.429,8,81.404,1,1
+zi su ye,perillaldehyde,warm,16441,CC(=C)C1CCC(=CC1)C=O,C10H14O,weak (PubChem self-reported formula),150.221,2.488,17.07,0,1,2,0.5,1,46.302,0,1
+wu mei,citric acid,even,311,C(C(=O)O)C(CC(=O)O)(C(=O)O)O,C6H8O7,weak (PubChem self-reported formula),192.123,-1.248,132.13,4,4,5,0.5,7,37.091,0,0
+cang er zi,atractyloside,warm,442004,CC(C)CC(=O)OC1C(C(C(OC1OC2CC(C3CCC45CC(CCC4C3(C2)C)C(=C)C5O)C(=O)O)CO)OS(=O)(=O)[O-])OS(=O)(=O)[O-].[K+].[K+],C30H44K2O16S2,weak (PubChem self-reported formula),802.996,-5.01,255.38,3,15,11,0.867,20,158.697,0,5
+che qian zi,plantamajoside,cold,5281788,C1=CC(=C(C=C1CCOC2C(C(C(C(O2)CO)OC(=O)C=CC3=CC(=C(C=C3)O)O)OC4C(C(C(C(O4)CO)O)O)O)O)O)O,C29H36O16,weak (PubChem self-reported formula),640.591,-2.043,265.52,10,16,11,0.483,16,148.507,2,4
+huang jing,diosgenin,even,99474,CC1CCC2(C(C3C(O2)CC4C3(CCC5C4CC=C6C5(CCC(C6)O)C)C)C)OC1,C27H42O3,weak (PubChem self-reported formula),414.63,5.714,38.69,1,3,0,0.926,3,117.701,0,6
+hu zhang,resveratrol,mildly cold,445154,C1=CC(=CC=C1C=CC2=CC(=CC(=C2)O)O)O,C14H12O3,weak (PubChem self-reported formula),228.247,2.974,60.69,3,3,2,0.0,3,66.806,2,2
+jie geng,platycodin D,even,162859,CC1C(C(C(C(O1)OC2C(C(COC2OC(=O)C34CCC(CC3C5=CCC6C(C5(CC4O)C)(CCC7C6(CC(C(C7(CO)CO)OC8C(C(C(C(O8)CO)O)O)O)O)C)C)(C)C)O)O)O)O)OC9C(C(C(CO9)O)OC1C(C(CO1)(CO)O)O)O,C57H92O28,weak (PubChem self-reported formula),1225.335,-5.378,453.28,17,28,14,0.947,28,281.632,0,10
+mu xiang,costunolide,warm,5281437,CC1=CCCC(=CC2C(CC1)C(=C)C(=O)O2)C,C15H20O2,weak (PubChem self-reported formula),232.323,3.551,26.3,0,2,0,0.533,2,68.492,0,2
+niu xi,ecdysterone,even,118701161,CC12CCC3C(=CC(=O)C4C3(CC(C(C4)O)O)C)C1(CCC2C(C)(C(CCC(C)(C)O)O)O)O,C27H44O7,weak (PubChem self-reported formula),480.642,1.854,138.45,6,7,5,0.889,7,126.602,0,4
+qian cao,purpurin,cold,6683,C1=CC=C2C(=C1)C(=O)C3=C(C2=O)C(=C(C=C3O)O)O,C14H8O5,weak (PubChem self-reported formula),256.213,1.579,94.83,3,5,0,0.0,5,64.743,2,3
+qiang huo,notopterol,warm,5320227,CC(=CC(CC(=CCOC1=C2C=CC(=O)OC2=CC3=C1C=CO3)C)O)C,C21H22O5,weak (PubChem self-reported formula),354.402,4.582,72.81,1,5,6,0.286,5,101.563,3,3
+qin jiao,gentiopicroside,even,88708,C=CC1C(OC=C2C1=CCOC2=O)OC3C(C(C(C(O3)CO)O)O)O,C16H20O9,weak (PubChem self-reported formula),356.327,-1.671,134.91,4,9,4,0.562,9,80.537,0,3
+ru xiang,boswellic acid,warm,168928,CC1CCC2(CCC3(C(=CCC4C3(CCC5C4(CCC(C5(C)C(=O)O)O)C)C)C2C1C)C)C,C30H48O3,weak (PubChem self-reported formula),456.711,7.09,57.53,2,2,1,0.9,3,132.612,0,5
+sha ren,bornyl acetate,warm,93009,CC(=O)OC1CC2CCC1(C2(C)C)C,C12H20O2,weak (PubChem self-reported formula),196.29,2.764,26.3,0,2,1,0.917,2,54.783,0,2
+she gan,tectoridin,cold,5281810,COC1=C(C=C2C(=C1O)C(=O)C(=CO2)C3=CC=C(C=C3)O)OC4C(C(C(C(O4)CO)O)O)O,C22H22O11,weak (PubChem self-reported formula),462.407,0.058,179.28,6,11,5,0.318,11,112.197,3,4
+wu yao,linderane,warm,6915739,CC1=CCCC23C(O2)C(C4=C(C1)OC=C4C)OC3=O,C15H16O4,weak (PubChem self-reported formula),260.289,2.606,51.97,0,4,0,0.533,4,66.577,1,4
+xi xin,methyleugenol,warm,7127,COC1=C(C=C(C=C1)CC=C)OC,C11H14O2,weak (PubChem self-reported formula),178.231,2.432,18.46,0,2,4,0.273,2,53.447,1,1
+ze xie,alisol B,cold,15558620,CC(CC(C1C(O1)(C)C)O)C2=C3CC(C4C5(CCC(=O)C(C5CCC4(C3(CC2)C)C)(C)C)C)O,C30H48O4,weak (PubChem self-reported formula),472.71,5.84,70.06,2,4,4,0.9,4,134.181,0,5

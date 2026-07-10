@@ -22,6 +22,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent))
 from fetch_pubchem import fetch_compound
 from verify_compound import verify_compound
+from topology_descriptors import compute_topology_descriptors
 
 
 def build_dataset(entries: list[tuple[str, str, str]], out_path: str,
@@ -64,8 +65,16 @@ def build_dataset(entries: list[tuple[str, str, str]], out_path: str,
             "smiles": fetch_result.canonical_smiles,
             "formula_verified": verify_result.computed_formula,
             "verification_strength": verification_strength,
-            **verify_result.descriptors,
+            "topology_canonical_smiles": fetch_result.canonical_smiles,
         }
+
+        topology_desc = compute_topology_descriptors(fetch_result.canonical_smiles)
+        row.update({f"topology_{k}": v for k, v in topology_desc.descriptors.items()})
+        row.update({"topology_formula": topology_desc.formula})
+        row.update({"topology_descriptor_source": "RDKit"})
+        row.update({"topology_descriptor_status": "computed"})
+        row.update({"topology_descriptor_error": ""})
+        row.update({**verify_result.descriptors})
         rows.append(row)
 
     if rows:

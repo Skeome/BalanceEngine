@@ -100,7 +100,8 @@ def formula_descriptors(formula: dict[str, int]) -> dict:
     numeric_fields = [
         "atomic_radius", "covalent_radius", "electronegativity_pauling",
         "first_ionization_energy", "electron_affinity",
-        "dipole_polarizability", "density", "thermal_conductivity",
+        "dipole_polarizability", "density", "melting_point",
+        "thermal_conductivity",
     ]
 
     aggregated = {}
