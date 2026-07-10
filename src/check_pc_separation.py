@@ -50,18 +50,19 @@ def main():
 
     X = df[FEATURE_COLS].values.astype(float)
     X_scaled = StandardScaler().fit_transform(X)
-    pca = PCA(n_components=3)
+    pca = PCA(n_components=4)
     coords = pca.fit_transform(X_scaled)
-    df['PC1'], df['PC2'], df['PC3'] = coords[:, 0], coords[:, 1], coords[:, 2]
+    df['PC1'], df['PC2'], df['PC3'], df['PC4'] = coords[:, 0], coords[:, 1], coords[:, 2], coords[:, 3]
 
     print(f"\nVariance explained: PC1={pca.explained_variance_ratio_[0]*100:.1f}%, "
           f"PC2={pca.explained_variance_ratio_[1]*100:.1f}%, "
-          f"PC3={pca.explained_variance_ratio_[2]*100:.1f}%")
+          f"PC3={pca.explained_variance_ratio_[2]*100:.1f}%, "
+          f"PC4={pca.explained_variance_ratio_[3]*100:.1f}%")
 
     # Correlation of each PC with the real label -- the actual test,
     # no fitting, just checking what's already there
     print("\n=== Correlation of each PC with REAL Hot/Cold label (no fitting) ===")
-    for pc in ['PC1', 'PC2', 'PC3']:
+    for pc in ['PC1', 'PC2', 'PC3', 'PC4']:
         r_all = np.corrcoef(df[pc], df['hot_cold_label'])[0, 1]
         r_bartlett = np.corrcoef(df.loc[df['source_dataset']=='Bartlett', pc],
                                    df.loc[df['source_dataset']=='Bartlett', 'hot_cold_label'])[0, 1]
@@ -69,11 +70,11 @@ def main():
                               df.loc[df['source_dataset']=='TCM', 'hot_cold_label'])[0, 1]
         print(f"  {pc}: all={r_all:+.3f}  Bartlett-only={r_bartlett:+.3f}  TCM-only={r_tcm:+.3f}")
 
-    # Plot: PC1 vs PC3 (the two most likely candidates), colored by label,
+    # Plot: PC1 vs PC3, PC2 vs PC3, and PC1 vs PC4, colored by label,
     # marker shape by source dataset
-    fig, axes = plt.subplots(1, 2, figsize=(15, 6))
+    fig, axes = plt.subplots(1, 3, figsize=(21, 6))
 
-    for ax, (x_pc, y_pc) in zip(axes, [('PC1', 'PC3'), ('PC2', 'PC3')]):
+    for ax, (x_pc, y_pc) in zip(axes, [('PC1', 'PC3'), ('PC2', 'PC3'), ('PC1', 'PC4')]):
         for dataset, marker in [('Bartlett', 'o'), ('TCM', '^')]:
             sub = df[df['source_dataset'] == dataset]
             sc = ax.scatter(sub[x_pc], sub[y_pc], c=sub['hot_cold_label'],

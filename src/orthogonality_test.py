@@ -64,7 +64,7 @@ def test_orthogonality(df: pd.DataFrame, hot_col: str, cold_col: str,
 
 if __name__ == "__main__":
     df = pd.read_csv("data/ground_truth/bartlett_measured.csv")
-    df = df[df['phlegm'] != '?']  # exclude Dandelion root row (no humor breakdown, but has H/C/W/D)
+    df = df[df[['hot', 'cold', 'wet', 'dry']].notna().all(axis=1)]  # keep all rows with valid H/C/W/D
     result = test_orthogonality(df, "hot", "cold", "wet", "dry")
     print("Bartlett ground truth orthogonality check:")
     for k, v in result.items():
