@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balance Engine visualizer</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;700&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h1>Balance Engine</h1>
+                <p>Visual Sandbox</p>
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="Search compounds...">
+                </div>
+            </div>
+            <ul id="compoundList" class="compound-list">
+                <!-- Populated by JS -->
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="main-header">
+                <h2 id="compoundTitle">Select a compound</h2>
+                <div class="badges" id="compoundBadges"></div>
+            </header>
+            
+            <div class="dashboard">
+                <div class="card viz-card">
+                    <div class="card-header">
+                        <h3>2D Structure</h3>
+                    </div>
+                    <div class="card-body">
+                        <canvas id="smilesCanvas" width="500" height="400"></canvas>
+                        <div id="smilesText" class="smiles-text"></div>
+                    </div>
+                </div>
+
+                <div class="card viz-card">
+                    <div class="card-header">
+                        <h3>3D Structure</h3>
+                    </div>
+                    <div class="card-body">
+                        <div id="viewer3d" class="viewer-3d"></div>
+                        <div id="viewerLoading" class="viewer-loading" style="display: none;">Loading 3D...</div>
+                    </div>
+                </div>
+
+                <div class="card info-card">
+                    <div class="card-header">
+                        <h3>Details & Temperament</h3>
+                    </div>
+                    <div class="card-body" id="detailsBody">
+                        <p class="empty-state">No compound selected.</p>
+                    </div>
+                </div>
+                
+                <div class="card action-card">
+                    <div class="card-header">
+                        <h3>Interactions Simulation</h3>
+                    </div>
+                    <div class="card-body">
+                        <p>In the future, you can drop another molecule here to simulate interactions and observe changes in temper (Hot/Cold, Dry/Wet).</p>
+                        <button class="btn primary-btn disabled">Simulate Interaction</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/smiles-drawer@2.0.1/dist/smiles-drawer.min.js"></script>
+    <script src="https://unpkg.com/3dmol/build/3Dmol-min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

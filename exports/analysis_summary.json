@@ -1,0 +1,122 @@
+{
+  "N_total": 101,
+  "N_bartlett": 11,
+  "N_tcm": 33,
+  "N_batch1": 20,
+  "N_batch2": 37,
+  "N_pca": 101,
+  "pca_features_used": 19,
+  "pca_variance_4pc": 89.17,
+  "correlations": [
+    [
+      "avg_electronegativity_pauling",
+      -0.321,
+      "Atomic (composition)"
+    ],
+    [
+      "avg_covalent_radius",
+      -0.193,
+      "Atomic (composition)"
+    ],
+    [
+      "avg_atomic_radius",
+      -0.18,
+      "Atomic (composition)"
+    ],
+    [
+      "LogP",
+      0.178,
+      "RDKit (bond-graph)"
+    ],
+    [
+      "HBD",
+      -0.153,
+      "RDKit (bond-graph)"
+    ],
+    [
+      "TPSA",
+      -0.138,
+      "RDKit (bond-graph)"
+    ],
+    [
+      "avg_first_ionization_energy",
+      -0.132,
+      "Atomic (composition)"
+    ],
+    [
+      "NumHeteroatoms",
+      -0.123,
+      "RDKit (bond-graph)"
+    ],
+    [
+      "avg_thermal_conductivity",
+      0.121,
+      "Atomic (composition)"
+    ],
+    [
+      "HBA",
+      -0.114,
+      "RDKit (bond-graph)"
+    ],
+    [
+      "avg_density",
+      0.105,
+      "Atomic (composition)"
+    ],
+    [
+      "avg_melting_point",
+      0.098,
+      "Atomic (composition)"
+    ],
+    [
+      "AromaticRings",
+      -0.087,
+      "RDKit (bond-graph)"
+    ],
+    [
+      "RingCount",
+      -0.087,
+      "RDKit (bond-graph)"
+    ],
+    [
+      "RotatableBonds",
+      0.084,
+      "RDKit (bond-graph)"
+    ],
+    [
+      "avg_dipole_polarizability",
+      0.072,
+      "Atomic (composition)"
+    ],
+    [
+      "avg_electron_affinity",
+      -0.049,
+      "Atomic (composition)"
+    ],
+    [
+      "MolWt",
+      -0.039,
+      "RDKit (bond-graph)"
+    ],
+    [
+      "FractionCSP3",
+      0.024,
+      "RDKit (bond-graph)"
+    ],
+    [
+      "MolarRefractivity",
+      -0.008,
+      "RDKit (bond-graph)"
+    ],
+    [
+      "electronegativity_spread",
+      0.003,
+      "Atomic (composition)"
+    ]
+  ],
+  "class_balance": {
+    "hot_side": 46,
+    "even": 17,
+    "cold_side": 38
+  }
+}
