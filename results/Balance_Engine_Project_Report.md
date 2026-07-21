@@ -70,7 +70,7 @@ Confirmed directly from Bartlett's *Temper of Herbs* (citing al-Jaldakī, d. 134
 - Compounding two ingredients' qualities is done by **straight addition** of ratio parts (not averaging, not multiplying): e.g., 4:1 + 1:2 = 5:3, then re-compared against the ratio ladder.
 - Final Balance (in Bartlett's tables) = (Hot − Cold), algebraically signed; Result/4DEG = Final Balance ÷ 4.
 
-### 3.3 The TCM Hot/Cold molecular polarity correlation (the project's strongest empirical result)
+### 3.3 The TCM Hot/Cold molecular polarity correlation (the project's strongest empirical result) `[DEPRECATED: Depends on legacy separate CSV files; needs re-evaluation under the unified compound-db.csv]`
 **Replicated four times across increasing sample size, using fully independently-verified data (TCMNP R package + manual structure verification against Sigma-Aldrich/Fisher/LGC/SCBT/Cayman/PubChem-derived sources):**
 
 | N (herbs) | Full multivariate LOOCV R² | Leading single-descriptor correlations |
@@ -115,7 +115,7 @@ Four papers were located and individually verified (full citation, DOI/PMID, and
 
 This was a major, unplanned finding, discovered while testing whether Hot/Cold and Wet/Dry behave as independent "order parameters" (a hypothesis raised via an external AI conversation).
 
-**Direct test on Bartlett herbs (raw Hot−Cold vs. raw Dry−Wet) — two valid subsets, reported separately to avoid the conflation in an earlier draft of this report:**
+**Direct test on Bartlett herbs (raw Hot−Cold vs. raw Dry−Wet) — two valid subsets, reported separately to avoid the conflation in an earlier draft of this report: [DEPRECATED: These analyses rely on legacy CSV files and need to be re-run on compound-db.csv]**
 - **Full 14-herb ground-truth table: r = −0.814**
 - **11-herb subset with verified molecular descriptors attached** (Plantain, Wormwood, and Hawthorn dropped — no verified marker compound): **r = −0.949**
 
@@ -140,7 +140,7 @@ The fact that Ramezany's independent, non-lab-based dataset shows the same patte
 2. **2D grid: Ramezany 20 phytochemical classes** (real published logit deltas) — shows real spread into all four quadrants, including Water (Alkaloids, Fats and Oils).
 3. **2D grid: Bartlett herbs + Dandelion root** — shows Dandelion landing in Air, just left of the Hot-Cold axis.
 
-(Image files: `2d_grid.png`, `2d_grid_with_dandelion.png` — generated in-session, not yet transferred to a persistent location.)
+(Image files: `2d_grid.png`, `2d_grid_with_dandelion.png` — [DEPRECATED/OBSOLETE: These files are not in the results/ directory. The actual files are pc_space_colored_by_real_label.png and pca_scree_plot_full_dataset.png].)
 
 ---
 
@@ -150,10 +150,10 @@ The fact that Ramezany's independent, non-lab-based dataset shows the same patte
 15 herbs with measured Hot/Cold/Wet/Dry parts, arithmetic-verified against Bartlett's own Final Balance/Result columns:
 Birch leaves, Caraway seed, Cinnamon, Comfrey root, Coriander seed, Fennel seed, Ginger root, Hawthorn berries/flowers, Melissa (lemon balm) leaf, Plantain leaf, Thyme leaf, Turmeric root, Willow bark, Wormwood leaf, **Dandelion root** (p.109, four-fraction distillation).
 
-### 6.2 Verified molecular descriptors — Bartlett herbs (11 of 14 marker compounds survived verification)
+### 6.2 Verified molecular descriptors — Bartlett herbs (11 of 14 marker compounds survived verification) `[DEPRECATED: Legacies from bartlett_verified.csv; migrating to unified compound-db.csv]`
 Betulin, carvone, cinnamaldehyde, allantoin, linalool, anethole, 6-gingerol, citronellal, thymol, curcumin, salicin — each cross-checked: RDKit-computed molecular formula matched independently published formula. **Excluded after failing verification**: vitexin, aucubin, thujone (incorrect structures recalled from memory; formula mismatch caught and excluded, not patched).
 
-### 6.3 Verified molecular descriptors — TCM herbs (34 herbs, fully cross-source-verified; up from 30)
+### 6.3 Verified molecular descriptors — TCM herbs (34 herbs, fully cross-source-verified; up from 30) `[DEPRECATED: Legacies from tcm_verified.csv; migrating to unified compound-db.csv]`
 Source: TCMNP R package (`github.com/tcmlab/TCMNP`), `herb_pm` dataset, 409 herbs total with real published TCM Property classifications (great cold/cold/mildly cold/cool/even/mildly warm/warm/hot/great hot).
 
 Marker compounds, all formula-verified AND cross-checked against a second independent source (Sigma-Aldrich, Fisher Scientific, LGC Standards, SCBT, Cayman Chemical, BOC Sciences, ChemicalBook, or PubChem-derived listings):
@@ -198,11 +198,11 @@ Built using RDKit's 85 standard substructure counters (`rdkit.Chem.Fragments`) o
 
 **Phase 4 — Extend to non-organic, non-elemental substances** (minerals, alloys, synthetics) only once Phase 3 has produced a defensible result.
 
-### 9.1 Update: atomic-level bridge layer (Layer 0/1) — first result, completed, now updated to N=45
+### 9.1 Update: atomic-level bridge layer (Layer 0/1) — first result, completed, now updated to N=45 `[DEPRECATED: This analysis depends on the legacy N=45 separate files and needs to be re-run on compound-db.csv]`
 
 A concrete blocker was identified and addressed: every descriptor used in Phase 1 (TPSA, LogP, HBD, HBA, etc.) is computed by RDKit from a bonded molecular graph, and is undefined or meaningless for inorganic/mineral compounds with no discrete organic-style bonded structure (e.g. quartz, galena). `src/atomic_descriptors.py` was built to compute composition-weighted average atomic properties (electronegativity, ionization energy, electron affinity, polarizability, atomic/covalent radius, density, thermal conductivity) directly from formula composition — a method that works identically for organics and inorganics, at the cost of having no notion of bonding or connectivity.
 
-**Updated direct test (N=45 verified compounds — 11 Bartlett + 34 TCM, up from the original N=33):**
+**Updated direct test (N=45 verified compounds — 11 Bartlett + 34 TCM, up from the original N=33): [DEPRECATED]**
 
 | Descriptor | r (vs. real Hot/Cold label) | Layer |
 |---|---|---|
