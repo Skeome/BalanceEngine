@@ -1,0 +1,80 @@
+Comprehensive Analytical Verification Workflow
+
+To standardize natural product chemical databases, researchers need a systematic, reproducible workflow to identify botanical sources, verify chemical structures, and assign stereochemical configurations.
+This step-by-step protocol guides human researchers from crude sample collection to verified, stereospecific digital records.
+
++--------------------------------------------------------------+
+|            1. Specimen Authentication & Processing           |
+|  - WFO / IPNI accepted binomial check                        |
+|  - Document plant parts and Pao Zhi processing               |
++--------------------------------------------------------------+
+                               |
+                               v
++--------------------------------------------------------------+
+|            2. Extract Harvesting & High-Res MS               |
+|  - Target compound extraction (polar/non-polar)              |
+|  - LC-MS/MS or GC-MS run (Exact Mass within +/- 5 ppm)       |
++--------------------------------------------------------------+
+                               |
+                               v
++--------------------------------------------------------------+
+|            3. Structural Data Harvesting                     |
+|  - Query CAS, PubChem CID, ChEBI ID, ChemSpider ID           |
+|  - Extract canonical SMILES, InChI, InChIKey                 |
++--------------------------------------------------------------+
+                               |
+                               v
++--------------------------------------------------------------+
+|            4. Stereochemical Validation                      |
+|  - Retrieve Isomeric SMILES (check chiral flags: @, @@, /,\) |
+|  - Classify as fully specified, partial, or omitted          |
++--------------------------------------------------------------+
+                               |
+                               v
++--------------------------------------------------------------+
+|            5. Digital Logging & Curation                     |
+|  - Format verified data into a standard 15-field schema      |
+|  - Save structural files as SDF/TSV libraries                |
++--------------------------------------------------------------+
+
+Step 1: Specimen Authentication and Processing Documentation
+Confirm the accepted botanical binomial of the plant by cross-referencing its common or Pinyin name with authoritative databases like the World Flora Online (WFO) or the International Plant Names Index (IPNI).
+Identify the exact part used (e.g., flowering spikes, leaves, or mature seeds).
+Document any processing methods (Pao Zhi) applied to the sample, such as smoking, steaming, or charring.
+These processes can alter the chemical composition and form specific structural artifacts.
+
+Step 2: Extract Harvesting and High-Resolution Mass Spectrometry
+Extract the compounds using appropriate solvents based on polarity: use hexane or supercritical carbon dioxide for volatile lipophilic terpenes, and methanol or ethanol-water mixtures for polar glycosides and organic acids.
+Analyze the extract using high-resolution liquid chromatography-tandem mass spectrometry (LC-MS/MS, such as UPLC-QToF-MS/MS) or gas chromatography-mass spectrometry (GC-MS).
+Identify the precursor ion and product ions to calculate the exact monoisotopic mass.
+Ensure the measured mass is within a $\pm$ 5 ppm tolerance window of the theoretical exact mass.
+Compare the fragmentation patterns and retention times against verified reference standards.
+
+Step 3: Structural Data Harvesting
+Search chemical structures in databases like PubChem, ChEBI, ChemSpider, and the LOTUS Natural Products Database using the compound's common name or CAS number.
+Retrieve the following identifiers for each compound:
+Standard IUPAC name
+Canonical SMILES (representing flat structure without stereocenters)
+Non-isomeric IUPAC InChI string
+Non-isomeric 27-character InChIKey
+PubChem Compound Identifier (CID)
+ChEBI identifier (ID)
+ChemSpider identifier (ID)
+
+Step 4: Stereochemical Validation and Classification
+Retrieve the Isomeric SMILES from PubChem or ChEBI.
+Inspect the string for stereochemical descriptors, such as @ or @@ for tetrahedral chiral centers, and / or \ for double-bond cis/trans geometries.
+Extract the standard stereospecific InChIKey and compare it against the non-stereospecific version.
+Classify the stereochemical configuration of the compound's representation into one of three categories:
+- fully stereospecified:
+Every chiral center and double-bond geometry is explicitly defined in the structural string. This includes achiral molecules where all atoms and connections are fully defined without undefined stereocenters.
+- partially specified:
+At least one chiral center or double-bond geometry is defined, but others are left undefined or represented as a racemic mixture.
+- stereochemistry omitted:
+No stereocenters or geometric isomers are defined, leaving the structural string flat.
+
+Step 5: Digital Logging and Database Curation
+Log all gathered data into a standardized database or spreadsheet utilizing the fifteen-field schema.
+For computational modeling or virtual screening, convert the structural files into standard formats like Structure-Data Files (SDF) using software such as BIOVIA Draw or Open Babel.
+Ensure all chiral flags remain intact during file conversions.
+Keep these libraries linked to accepted botanical taxonomies for future reference.

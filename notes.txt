@@ -67,3 +67,32 @@ To make it concrete:
 - later expand below that to a per-atom representation using atomic descriptors + local graph context
 
 That is the correct architectural path to go from “organic-only PCA” to a true unified organic/inorganic system, then eventually to atom-level modeling.
+
+------------------------------------------------------------------------------------
+
+
+Suggestions for future improvements
+
+Based on the repository structure, the next improvements I'd prioritize would be:
+
+Package the code into an installable Python package (balanceengine/) instead of relying on standalone scripts.
+Add automated tests for:
+descriptor generation
+PCA reproducibility
+verification routines
+Introduce configuration files (YAML/TOML) instead of hard-coded paths and parameters.
+Add a pipeline diagram to the README illustrating:
+compound sources
+        ↓
+verification
+        ↓
+descriptor generation
+        ↓
+PCA
+        ↓
+classification
+        ↓
+exports
+        ↓
+web visualization
+Separate generated artifacts (exports/) from source-controlled code if they become large or frequently regenerated.

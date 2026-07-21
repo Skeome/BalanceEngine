@@ -17,7 +17,7 @@ def serve_file(path):
 
 @app.route('/api/compounds')
 def get_compounds():
-    catalog_path = Path('../data/compounds/compound_catalog.csv')
+    catalog_path = Path('../data/compounds/compound-db.csv')
     compounds = []
     if catalog_path.exists():
         with open(catalog_path, 'r', encoding='utf-8') as f:
